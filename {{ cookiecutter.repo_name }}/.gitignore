@@ -8,4 +8,5 @@ tests/__pycache__/*
 
 .gitattributes
 
-data/
+# Large Dataset Files Extensions
+*.csv
