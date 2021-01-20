@@ -3,6 +3,13 @@
 
 {{cookiecutter.description}}
 
+
+
+<p align="center">
+<img src=""  />
+</p>
+
+
 Project Organization
 ------------
 ```
@@ -22,7 +29,7 @@ Project Organization
 │   
 ├── docs
 │   ├── Analysis.md
-│   └── Reuirements.md
+│   └── Requirements.md
 │   
 ├── notebooks
 │ 
@@ -43,12 +50,59 @@ Project Organization
 │   └── main.py
 │ 
 ├── Dockerfile
-├── LICENSE
+│ 
+├── run.sh
 ├── logs
-├── README.md
 ├── references
 ├── requirements.txt
+├── README.md
+├── LICENSE
 └── tests
     └── test_environment.py
 ```
 --------
+
+
+## Getting Started
+
+### Requirements
+
+```
+pip install -r requirements.txt
+```
+
+### Download the dataset
+
+The following command will download the dataset from the URL given in `src/config/config.py` file .
+
+```
+python -m {{cookiecutter.project_name}}.data.make_dataset
+```
+
+### Run
+
+```
+python -m {{cookiecutter.project_name}}.main
+```
+OR
+
+```
+./run.sh
+```
+
+### Test
+
+```
+python -m tests.test_environment
+```
+
+
+### To-do List
+
+- [ ] Download dataset
+- [ ] Pre-process data
+- [ ] Train model
+- [ ] Test model
+- [ ] Main Pipeline
+
+-------------------------------
