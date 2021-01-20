@@ -9,40 +9,42 @@ Project Organization
 ├── api
 │   ├── app.py
 │   ├── config
+│   │   └── config.py
 │   ├── resources
 │   ├── static
 │   └── templates
 │   
 ├── checkpoints
+│   
+├── data
+│   ├── processed
+│   └── raw
+│   
+├── docs
+│   ├── Analysis.md
+│   └── Reuirements.md
+│   
+├── notebooks
 │ 
 ├── {{cookiecutter.project_name}}
 │   ├── config
+│   │   └── config.py
 │   ├── data
 │   │   └── make_dataset.py
 │   ├── dispatcher
 │   ├── features
 │   │   ├── build_features.py
-│   ├── main.py
 │   ├── models
 │   │   ├── test_model.py
 │   │   └── train_model.py
 │   ├── utils
-│   └── visualisation
-│       └── visualisation.py
-│ 
-├── data
-│   ├── processed
-│   └── raw
+│   ├── visualisation
+│   |   └── visualisation.py
+│   └── main.py
 │ 
 ├── Dockerfile
-│ 
-├── docs
-│   ├── Analysis.md
-│   └── Reuirements.md
-│ 
 ├── LICENSE
 ├── logs
-├── notebooks
 ├── README.md
 ├── references
 ├── requirements.txt
