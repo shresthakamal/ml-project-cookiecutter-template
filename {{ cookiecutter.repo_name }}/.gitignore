@@ -10,3 +10,11 @@ tests/__pycache__/*
 
 # Large Dataset Files Extensions
 *.csv
+
+__pycache__
+
+ __init__.py
+ 
+ *.toml
+
+*.ini
